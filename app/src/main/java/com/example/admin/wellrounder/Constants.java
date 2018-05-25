@@ -19,7 +19,7 @@ public class Constants {
     //private static final String ROOT_URL = "http://172.20.7.90/WellRounderLogin/v1/";
     //private static final String ROOT_URL2 = "http://172.20.7.90/WellRounderLogin/v1/Api.php?apicall=";
 
-    //home ip address
+    //home ip addresss
 //    private static final String ROOT_URL = "http://192.168.0.13/WellRounderLogin/v1/";
 //
 //    private static final String ROOT_URL2=  "http://192.168.0.12/WellRounderLogin/v1/Api.php?apicall=";
