@@ -11,7 +11,7 @@ package com.example.admin.wellrounder;
 public class Constants {
 
 
-    //School ip address
+    //School ip address s
 //   private static final String ROOT_URL = "http://172.20.1.254/WellRounderLogin/v1/";
 
     //second school ip?
