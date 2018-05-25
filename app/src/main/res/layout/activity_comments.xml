@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.wellrounder.Comments"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/llListItemTop"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="1">
+
+        <LinearLayout
+
+            android:id="@+id/llListItemMiddle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/imgProfilePicCMT"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/logo_v1" />
+
+            <TextView
+                android:id="@+id/tvUsernameCMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Username" />
+
+
+            <TextView
+
+                android:id="@+id/tvTimeCMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Time" />
+
+
+            <TextView
+                android:id="@+id/tvDateCMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:text="0000-00-00" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="111dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_v1" />
+
+        <TextView
+            android:padding="7dp"
+            android:id="@+id/tvPostCMTpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Post "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etPostCommentCMT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add comment " />
+
+        <Button
+            android:id="@+id/btnPostCommentCMT"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:hint="Post Comment"
+            android:padding="7dp" />
+
+        <TextView
+            android:id="@+id/tvNoCommentsCMTS"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:paddingTop="25dp"
+            android:text="There are not comments... Buy in before it rises!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvRecyclerViewComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

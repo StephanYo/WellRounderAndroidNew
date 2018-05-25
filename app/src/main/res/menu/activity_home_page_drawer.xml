@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homePage"
+
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_newsFeed"
+            android:icon="@drawable/ic_rss_feed_black_24dp"
+            android:title="News Feed" />
+        <item
+            android:id="@+id/nav_invest"
+            android:icon="@drawable/ic_attach_money_black2_24dp"
+            android:title="Invest" />
+        <item
+            android:id="@+id/nav_explore"
+            android:icon="@drawable/ic_explore_black_24dp"
+            android:title="Explore" />
+        <item
+            android:id="@+id/nav_messaging_main"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Messaging"
+            />
+
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="Share" />
+    </group>
+
+
+</menu>

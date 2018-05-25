@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etSearchBarTab2"
+            android:hint="What are you looking for?"
+            android:textSize="14dp"
+            android:layout_width="225dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_edittext"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/btnLoadDataInvestTab2"
+            android:layout_width="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_button"
+            android:hint="Search" />
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/swipeRefreshTab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv5DaysTab2"
+                    android:text="5 days,"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv1MonthTab2"
+                    android:paddingRight="5dp"
+                    android:text="1 Month,"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv6MonthTab2"
+                    android:paddingRight="5dp"
+                    android:text="6 Months,"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv1YearhTab2"
+                    android:paddingRight="7dp"
+                    android:text="1 Year,"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvFullDataTab2"
+
+                    android:text="Full "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTickerTopTab2"
+                android:paddingLeft="7dp"
+                android:textSize="24dp"
+                android:text="Search for a ticker, ex. MSFT"
+                android:textColor="@color/colorRealBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"/>
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graphTab2"
+                android:layout_width="match_parent"
+                android:layout_height="190dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="4dp"
+                android:id="@+id/rvRecyclerViewTab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

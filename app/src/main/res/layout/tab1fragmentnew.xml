@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshTab1New"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.wellrounder.SpecificStockItem">
+
+
+    <LinearLayout
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearchBarTab1New"
+                android:layout_width="225dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_edittext"
+                android:hint="What are you looking for?"
+                android:textAlignment="center"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnSearchTab1New"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_button"
+                android:hint="Search" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/llMainLinearLayoutTab1New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <TextView
+
+                    android:id="@+id/tvTickerSpecificStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ticker"
+                    android:textColor="@color/colorRealBlack"
+                    android:textSize="26dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvStockPriceSpecific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textColor="@color/colorRealBlack"
+                    android:textSize="26dp"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvStockDateSpecific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/colorRealBlack"
+                    android:textSize="26dp"
+                    tools:layout_editor_absoluteX="175dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tvTodaySpecificStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="64dp" />
+
+                <TextView
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv5DaysSpecificStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Days"
+                    tools:layout_editor_absoluteX="72dp"
+                    tools:layout_editor_absoluteY="64dp" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv1MonthSpecificStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Month"
+                    tools:layout_editor_absoluteX="123dp"
+                    tools:layout_editor_absoluteY="64dp" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv1YearSpecificStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="64dp" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/graphTab1FramgNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCompanyNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Company News"
+                    android:textColor="@color/colorRealBlack"
+                    android:textSize="26dp"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="240dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTab1New"
+                    android:layout_width="340dp"
+                    android:layout_height="140dp"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="277dp">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_button"
+
+                    android:text="Favoriate"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="455dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

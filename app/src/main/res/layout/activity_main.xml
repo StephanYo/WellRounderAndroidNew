@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.wellrounder.MainActivity"
+    android:background="@drawable/gradient_background_pink">
+
+<ImageView
+    android:layout_marginTop="25dp"
+    android:src="@drawable/logo_v1"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginBottom="25dp"
+    />
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:background="@drawable/round_button3"
+        android:id="@+id/etUserNameLogin"
+        android:hint="Username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+         />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:background="@drawable/round_button3"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+
+        android:id="@+id/etPasswordLogin"
+        android:hint="Password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+
+         />
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:id="@+id/btnLogIn"
+        android:hint="Login"
+        android:onClick="onClick"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/round_button"
+        />
+
+    <TextView
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:id="@+id/tvNewAccount"
+        android:hint="Need an Account?"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

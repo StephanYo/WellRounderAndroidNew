@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WellRounder</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabbed_test">TabbedActivityTest</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_invest_tabbed_test">InvestTabbedTest</string>
+    <string name="title_activity_messaging_main_screen">MessagingMainScreen</string>
+    <string name="title_activity_luke_stock_test">LukeStockTest</string>
+</resources>

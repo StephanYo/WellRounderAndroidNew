@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.admin.wellrounder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" tools:node="remove" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_v1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UpdateAccount" />
+        <activity android:name=".TestUserProfile" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".Comments" />
+        <activity android:name=".StockTest" />
+        <activity android:name=".ActivityName"/>
+        <activity
+            android:name=".TabbedActivityTest"
+            android:label="@string/title_activity_tabbed_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TabbedTest" />
+        <activity
+            android:name=".InvestTabbedTest"
+            android:label="@string/title_activity_invest_tabbed_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Messaging" />
+        <activity
+            android:name=".MessagingMainScreen"
+            android:label="@string/title_activity_messaging_main_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LukeStockTest"
+            android:label="@string/title_activity_luke_stock_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SpecificStockItem"></activity>
+    </application>
+
+</manifest>

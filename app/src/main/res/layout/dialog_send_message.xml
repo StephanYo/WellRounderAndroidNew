@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:padding="7dp"
+            android:text="To:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:hint="To:"
+            android:id="@+id/etSendMessageTo"
+            android:padding="7dp"
+            android:layout_width="250dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:hint="Message:"
+        android:id="@+id/etSendMessageToText"
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="140dp" />
+
+
+</LinearLayout>

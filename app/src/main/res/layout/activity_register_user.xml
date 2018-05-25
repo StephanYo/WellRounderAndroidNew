@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    tools:context="com.example.admin.wellrounder.RegisterUser"
+    android:background="@drawable/gradient_background_pink">
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/logo_v1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <EditText
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="21dp"
+
+
+            android:hint="Username"
+            android:layout_gravity="center"
+            android:id="@+id/etUserRegisterUser"
+
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/round_button3"
+
+            android:layout_marginTop="14dp"
+
+            />
+
+
+
+
+        <EditText
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="21dp"
+            android:layout_gravity="center"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:ems="10"
+
+            android:id="@+id/etEmailRegisterUser"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/round_button3"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="14dp"
+
+
+            />
+
+        <EditText
+            android:hint="Password"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="21dp"
+            android:layout_gravity="center"
+            android:id="@+id/etPasswordRegisterUser"
+
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:ems="10"
+            android:layout_marginTop="14dp"
+
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/round_button3"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:hint="Password Confirm"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="21dp"
+            android:layout_gravity="center"
+            android:id="@+id/etPasswordConfrimRegAcc"
+            android:layout_width="300dp"
+
+            android:layout_marginTop="14dp"
+
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:ems="10"
+
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+
+
+            android:background="@drawable/round_button3"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/etFirstNameReg"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+
+                android:layout_marginRight="14dp"
+
+                android:background="@drawable/round_button3"
+                android:ems="10"
+                android:hint="First"
+
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etMiddleNameReg"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="14dp"
+
+                android:background="@drawable/round_button3"
+
+                android:ems="10"
+                android:hint="Middle "
+                android:imeOptions="actionNext"
+
+
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etLastNameReg"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button3"
+                android:ems="10"
+
+                android:hint="Last"
+
+                android:imeOptions="actionNext"
+
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etPhoneNumberRA"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:hint="Phone Number"
+            android:drawablePadding="21dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/round_button3"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_assignment_black_24dp"
+            android:drawablePadding="14dp"
+
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Birth Date"
+            android:id="@+id/etBirthDateReg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+
+            android:background="@drawable/round_button3"
+            android:inputType="date"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="300dp"
+
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+
+            android:background="@drawable/round_button"
+            android:hint="Create Account"
+            />
+
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="7dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/tvAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Already have an account?"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

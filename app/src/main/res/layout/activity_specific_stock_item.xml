@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.wellrounder.SpecificStockItem"
+    android:id="@+id/swipeRefreshSpecificStock">
+
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="7dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tvTickerSpecificStock"
+            android:text="Ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textColor="@color/colorRealBlack"
+            tools:layout_editor_absoluteY="16dp"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorRealBlack"
+            android:text="price"
+            android:id="@+id/tvStockPriceSpecific"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="16dp"
+            tools:layout_editor_absoluteX="101dp" />
+        <TextView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorRealBlack"
+            android:text="Date"
+            android:id="@+id/tvStockDateSpecific"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="16dp"
+            tools:layout_editor_absoluteX="175dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="7dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTodaySpecificStock"
+            android:text="Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="64dp"
+            tools:layout_editor_absoluteX="22dp" />
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv5DaysSpecificStock"
+            android:text="5 Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="64dp"
+            tools:layout_editor_absoluteX="72dp" />
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv1MonthSpecificStock"
+            android:text="1 Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="64dp"
+            tools:layout_editor_absoluteX="123dp" />
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv1YearSpecificStock"
+            android:text="Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="64dp"
+            tools:layout_editor_absoluteX="182dp" />
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphSpecificStock"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tvCompanyNews"
+            android:text="Company News"
+            android:textColor="@color/colorRealBlack"
+            android:layout_gravity="center"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="240dp"
+            tools:layout_editor_absoluteX="101dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSpecificStock"
+            android:layout_width="340dp"
+            android:layout_height="169dp"
+            tools:layout_editor_absoluteY="277dp"
+            tools:layout_editor_absoluteX="22dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/round_button"
+            android:text="Favoriate"
+            android:layout_width="300dp"
+
+            android:layout_height="40dp"
+            tools:layout_editor_absoluteY="455dp"
+            tools:layout_editor_absoluteX="22dp" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
